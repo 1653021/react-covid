@@ -1,0 +1,19 @@
+#wrap-list-infected{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.title-list-infected-patient{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.infected-patient{
+    cursor: pointer;
+}
+.infected-patient:hover {
+    color: blue;
+}

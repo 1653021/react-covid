@@ -1,0 +1,48 @@
+.wrap-seek-bar {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%
+}
+
+/* Current date selected */
+.wrap-current-date-selected {
+  margin-bottom: 20px;
+}
+.title-current-date {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Title start - end date */
+.wrap-title-start-end-date {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Play - Pause - Reset button */
+.button-play-pause {
+  margin-right: 20px;
+  margin-top: 15px;
+  width: 120px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.button-play-pause:hover {
+  color: white;
+  background-color: rgb(10, 149, 184);
+}
+
+.button-reset {
+  margin-right: 20px;
+  margin-top: 15px;
+  width: 120px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.button-reset:hover {
+  color: white;
+  background-color: rgb(10, 149, 184);
+}
