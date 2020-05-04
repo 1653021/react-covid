@@ -84,6 +84,25 @@ const WorldGraph = (props) => {
                     ]
                 },
                 options: {
+                    tooltips: {
+                        callbacks: {
+                          title: function(tooltipItem, data) {
+                                return data['labels'][tooltipItem[0]['index']];
+                          },
+                          beforeLabel: function(tooltipItem, data) {
+                            const result = "Nhiem: " + data['datasets'][0]['data'][tooltipItem['index']];
+                            return result;
+                          },
+                          label: function(tooltipItem, data) {
+                                const result = "Tu Vong: " + data['datasets'][1]['data'][tooltipItem['index']];
+                                return result;
+                          },
+                          afterLabel: function(tooltipItem, data) {
+                            const result = "Khoi benh: " + data['datasets'][2]['data'][tooltipItem['index']];
+                            return result;
+                          }
+                        }
+                    },
                     scales: {
                         xAxes: [{
                             ticks: {
