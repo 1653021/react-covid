@@ -45,8 +45,8 @@ const CovidDashboard = (props) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            fetch("https://cors-anywhere.herokuapp.com/maps.vnpost.vn/apps/covid19/api/patientapi/list")
-            .then(res => res.json())
+            const res = await fetch("https://cors-anywhere.herokuapp.com/maps.vnpost.vn/apps/covid19/api/patientapi/list")
+            res.json()
             .then(
                 (response) => {
                     const sort_list_patient = response.data.sort((a, b) => (new Date(a.verifyDate) >= new Date(b.verifyDate)) ? -1 : 1);
