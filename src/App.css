@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.wrap-router {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.link-map {
+  display: inline-block;  
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.link-stats {
+  display: inline-block;  
+  font-size: 24px;
+}
+
+.active-link {
+  color: blue;
+}
